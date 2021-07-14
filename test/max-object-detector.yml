@@ -26,18 +26,6 @@ spec:
       labels:
         app: max-object-detector
     spec:
-      affinity:
-        podAntiAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 1
-            podAffinityTerm:
-              labelSelector:
-                matchExpressions:
-                  - key: "app"
-                    operator: In
-                    values:
-                    - max-object-detector
-              topologyKey: "kubernetes.io/hostname"
       containers:
       - name: max-object-detector
         image: quay.io/codait/max-object-detector:latest
