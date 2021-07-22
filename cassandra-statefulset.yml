@@ -47,7 +47,7 @@ spec:
             - name: CASSANDRA_CLUSTER_NAME
               value: "Cassandra"
             - name: CASSANDRA_DC
-              value: "DC1"
+              value: "datacenter1"
             - name: CASSANDRA_RACK
               value: "Rack1"
             - name: CASSANDRA_ENDPOINT_SNITCH
